@@ -1,12 +1,27 @@
 <template>
-  <div class="header">
-    <img class="logo" src="../assets/logo.png">
-    <div class="app-name" style="">
-      <p style="color: #141414">
-        HOME
-        <b style="color: #00cc66;">GROW</b>
-      </p>
+  <div>
+    <div class="header">
+      <img class="logo" src="../assets/logo.png">
+      <div class="app-name">
+        <p style="color: #141414">
+          HOME
+          <b style="color: #00cc66;">GROW</b>
+        </p>
+      </div>
     </div>
+    <form class="login-form">
+      <div class="">
+        Email:
+        <input type="email" name="email">
+        <br>
+      </div>
+      <div class="">
+        Password:
+        <input type="password" name="password">
+      </div>
+    </form>
+    <button>Submit</button>
+    <button>Reset</button>
   </div>
 </template>
 
@@ -17,8 +32,15 @@ export default {
 </script>
 
 <style lang="css">
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
 .header {
-  width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .app-name {
@@ -29,5 +51,7 @@ export default {
 .logo {
   width: 75px;
   height: 75px;
+  float: left;
+  margin-top: 30px;
 }
 </style>
