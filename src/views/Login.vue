@@ -10,12 +10,12 @@
       </div>
     </div>
     <form class="login-form">
-      <div class="">
+      <div class="label">
         Email:
         <input type="email" name="email">
         <br>
       </div>
-      <div class="">
+      <div class="label">
         Password:
         <input type="password" name="password">
       </div>
@@ -33,9 +33,14 @@ export default {
 
 <style lang="css">
 button {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+
+input {
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .header {
